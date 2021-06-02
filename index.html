@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <link rel="stylesheet", href = "style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Potta+One&display=swap" rel="stylesheet">
+
+        <title>HangMan game</title>
+    </head>
+    <body>
+        <header>
+            <h1>HANGMAN</h1>
+            <h3>The classic game in JavaScript</h3>
+        </header>
+        <div class='grid-wrapper'>
+            <div id="alphabet">
+
+            </div>
+            <div id="word-part">
+                <div id="word"></div>
+            </div>
+            <div id="hangman">
+
+            </div>
+            <div id='game-info' class='infobox'>
+                Remaining guesses: <span id='lives'> 10 </span>
+            </div>
+            <div id='game-controls' class="infobox">
+                <button class="control-button" id='start-button'>Start</button>
+                <button class='control-button'>Hint</button>
+                <button class='control-button' id='give-up'>Give up</button>
+                <div class='selection'>
+                    <label class="form">Select a category</label>
+                    <select class="selection" id='topic'>
+                        <option value='things'>Everyday things</option>
+                        <option value='movies'>Movies</option>
+                        <option value='all'>All</option>
+                    </select>
+                </div>
+                <div class="selection">
+                    <label class="form">Select difficulty</label>
+                    <select class="selection" id='difficulty'>
+                        <option value='easy'>Easy</option>
+                        <option value='medium' selected>Medium</option>
+                        <option value='hard'>Hard</option>
+                    </select>
+                </div>
+            </div>
+            <div class="infobox"id='hint-box'>
+                <div>If you request a hint, it will appear here</div>
+            </div>
+        </div>
+        <script type="text/javascript" src="./app.js"></script>
+    </body>
+    <footer>This entire website is written in vanilla JavaScript</footer>
+
+</html>

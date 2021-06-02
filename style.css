@@ -1,0 +1,198 @@
+
+header{
+    text-align: center;
+    margin: 50px;
+    font-family: 'Potta One', cursive;
+}
+
+body{
+    font-family: 'Potta One', cursive;
+    background-image: linear-gradient(to top, #30cfd0 0%, #6a36a8 100%);
+    min-height: 1000px;
+}
+
+.grid-wrapper{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-gap: 1em;
+}
+
+#alphabet{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: .5em;
+    padding: 20px;
+}
+
+.button{
+    border: black 3px solid;
+    padding: 5px;
+    background-color: rgb(176, 228, 228);
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', cursive;
+    width: 60px;
+}
+
+.wrong-button{
+    border: black 3px solid;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', cursive;
+    background-color: rgb(247, 39, 39);
+}
+
+.good-button{
+    border: black 3px solid;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: 'Potta One', cursive;
+    background-color: rgb(0, 255, 34);
+}
+
+.button:hover{
+    border: rgb(146, 241, 146) 3px solid;
+    color:white;
+    background-color: black;
+    font-family: 'Potta One', cursive;
+}
+
+#word-part{
+    margin: auto auto;
+    font-size: 40px;
+}
+
+#hangman{
+    border: black 5px solid;
+}
+
+.infobox{
+    margin: auto;
+    border:brown 0px solid;
+    padding: 50px;
+    font-family: 'Potta One', cursive;
+}
+
+.control-button{
+    font-family: 'Potta One', cursive;
+    padding: 20px;
+    font-size: 24px;
+    border: black 5px solid;
+    border-radius: 20px;
+    color: white;
+    background-color: #461483;
+}
+
+.control-button:hover{
+    font-family: 'Potta One', cursive;
+    padding: 20px;
+    font-size: 24px;
+    border: #80e6e6 5px solid;
+}
+
+.selection{
+    font-family: 'Potta One', cursive;
+    padding: 5px;
+    margin: 10px auto;
+    margin-bottom: 0px;
+    text-align: center;
+}
+select{
+    background-color: #80e6e6;
+}
+
+#word{
+    text-align: center;
+}
+
+#hangman{
+    width: 300px;
+    height: 400px;
+    border:black 3px solid;
+}
+
+#base{
+    width: 120px;
+    height: 0px;
+    border: black 5px solid;
+    position: relative;
+    top: 342px;
+    left: 20px;
+}
+
+#stand{
+    width: 0px;
+    height: 250px;
+    border:black 5px solid;
+    position:relative;
+    top:82px;
+    left:50px;
+}
+
+#hanging1{
+    width:100px;
+    height:0px;
+    border:black 5px solid;
+    position: relative;
+    top:-160px;
+    left: 50px;
+}
+
+#hanging2{
+    width: 0;
+    height: 25px;
+    border:black 3px solid;
+    position: relative;
+    top:-165px;
+    left:150px;
+}
+
+#head{
+    width: 40px;
+    height: 40px;
+    border:black 5px solid;
+    border-radius: 50%;
+    position:relative;
+    top: -170px;
+    left: 130px;
+}
+
+#torso{
+    width: 0px;
+    height:60px;
+    border:black 2px solid;
+    position:relative;
+    top:-170px;
+    left:150px;
+}
+
+#hands{
+    width: 45px;
+    height: 0px;
+    border:black 2px solid;
+    position:relative;
+    top:-210px;
+    left:125px;
+}
+
+#left-leg{
+    width:0px;
+    height:35px;
+    border:black 2px solid;
+    position:relative;
+    top: -180px;
+    left: 142px;
+    transform: rotate(20deg);
+}
+
+#right-leg{
+    width:0px;
+    height:35px;
+    border:black 2px solid;
+    position:relative;
+    top: -219px;
+    left: 158px;
+    transform: rotate(-20deg);
+}
